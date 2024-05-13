@@ -20,7 +20,7 @@
   }
   
   main {
-    background-image: url('file:///C:/Users/Andre/Desktop/My%20personal%20sites/Assets/Page%20Background.png');
+    background-image: url('../Assets/Main\ Content\ Background.png');
     border: 10px groove white;
     margin: 20px;
     padding: 10px;
