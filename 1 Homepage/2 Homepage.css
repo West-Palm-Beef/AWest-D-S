@@ -1,0 +1,141 @@
+/* CSS styles */
+*:focus {
+    outline: 4px dashed seagreen; /* Example: Blue outline */
+    outline-offset: 3px; /* Adjust the distance between the outline and the element */
+  }
+  
+  body {
+    background: black;
+    margin: 10px;
+    padding: 10px; 
+    font-family: 'Times New Roman', Times, serif; 
+    color: white;
+  }
+  
+  header {
+    background: darkgreen;
+    border: 10px groove white;
+    margin: 10px;
+    padding: 10px;
+  }
+  
+  main {
+    background-image: url('file:///C:/Users/Andre/Desktop/My%20personal%20sites/Assets/Page%20Background.png');
+    border: 10px groove white;
+    margin: 20px;
+    padding: 10px;
+  }
+  
+  footer {
+    background: darkgreen;
+    border: 10px groove white;
+    margin: 5px;
+    padding: 10px;
+  }
+  
+  /* Hide skip link visually but keep it accessible */
+  #main-link {
+    position: absolute;
+    left: -10000px;
+    top: auto;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    clip: rect(1px, 1px, 1px, 1px);
+  }
+  
+  /* Show skip link when it receives focus */
+  #main-link:focus {
+    position: static; /* Reset position */
+    width: auto; /* Reset width */
+    height: auto; /* Reset height */
+    overflow: visible; /* Reset overflow */
+    clip: auto; /* Reset clip */
+    left: auto; /* Reset left */
+    top: auto; /* Reset top */
+    color: white;
+    border: 2px solid blue; /* Example: Highlight link with yellow background */
+  }
+  
+  /* Hide skip link visually but keep it accessible */
+  #footer-link {
+    position: absolute;
+    left: -10000px;
+    top: auto;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    clip: rect(1px, 1px, 1px, 1px);
+  }
+  
+  /* Show skip link when it receives focus */
+  #footer-link:focus {
+    position: static; /* Reset position */
+    width: auto; /* Reset width */
+    height: auto; /* Reset height */
+    overflow: visible; /* Reset overflow */
+    clip: auto; /* Reset clip */
+    left: auto; /* Reset left */
+    top: auto; /* Reset top */
+    color: white;
+    border: 2px solid blue; /* Example: Highlight link with yellow background */
+  }
+  
+  
+  /*MAIN NAV MENU*/
+  
+  nav ul {
+    list-style: none;
+    padding: 0;
+    background: whitesmoke;
+  }
+  
+  nav ul li {
+    position: relative;
+    display: inline-block;
+    margin-right: 20px;
+  }
+  
+  nav ul li a {
+    display: inline-block;
+    font-size: 40px;
+    margin-left: 180px;
+    text-decoration: underline;
+    color: #000;
+  }
+  
+  nav ul li button {
+    padding: 0px;
+    border: none;
+    cursor: pointer;
+    color: blue;
+  }
+  
+  nav ul li button svg {
+    width: 20px;
+    height: 20px;
+    fill: blue;
+  }
+  
+  nav ul ul {
+    display: none;
+    position: absolute;
+    text-align: left;
+    top: 46px;
+    left: 0px;
+    padding: 10px;
+    background-color: #fff;
+    border: 2px solid #000;
+  }
+  
+  nav ul ul li {
+    display: block;
+  }
+  
+  nav ul ul.expanded {
+    display: block;
+  }
+  
+  /*TEST CODE*/
+  
+  
