@@ -42,9 +42,9 @@
     padding: 10px;
   }
   
-
+/* SKIP CONTENT LINKS =====================*/
   /* SKIP TO MAIN - HIDDEN */
-  #main-link {
+  .skip-to-main-link {
     position: absolute;
     left: -10000px;
     top: auto;
@@ -55,20 +55,44 @@
   }
   
   /* SKIP TO MAIN - FOCUSED */
-  #main-link:focus {
-    position: static; /* Reset position */
-    width: auto; /* Reset width */
-    height: auto; /* Reset height */
-    overflow: visible; /* Reset overflow */
-    clip: auto; /* Reset clip */
-    left: auto; /* Reset left */
-    top: auto; /* Reset top */
+  .skip-to-main-link:focus {
+    position: static;
+    width: auto;
+    height: auto;
+    overflow: visible;
+    clip: auto;
+    left: auto;
+    top: auto;
     color: white;
-    border: 2px solid blue; /* Example: Highlight link with yellow background */
+    border: 2px solid blue;
+  }
+
+  /* SKIP TO FOOTER - HIDDEN */
+  .skip-to-footer-link {
+    position: absolute;
+    left: -10000px;
+    top: auto;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    clip: rect(1px, 1px, 1px, 1px);
+  }
+
+  /* SKIP TO FOOTER - FOCUSED */
+  .skip-to-footer-link:focus {
+    position: static;
+    width: auto;
+    height: auto;
+    overflow: visible;
+    clip: auto;
+    left: auto;
+    top: auto;
+    color: white;
+    border: 2px solid blue;
   }
   
   /* BACK TO TOP - HIDDEN */
-  #footer-link {
+  .back-to-top {
     position: absolute;
     left: -10000px;
     top: auto;
@@ -79,16 +103,16 @@
   }
   
   /* BACK TO TOP - FOCUSED */
-  #footer-link:focus {
-    position: static; /* Reset position */
-    width: auto; /* Reset width */
-    height: auto; /* Reset height */
-    overflow: visible; /* Reset overflow */
-    clip: auto; /* Reset clip */
-    left: auto; /* Reset left */
-    top: auto; /* Reset top */
+  .back-to-top:focus {
+    position: static;
+    width: auto;
+    height: auto;
+    overflow: visible;
+    clip: auto;
+    left: auto;
+    top: auto;
     color: white;
-    border: 2px solid blue; /* Example: Highlight link with yellow background */
+    border: 2px solid blue;
   }
   
   
