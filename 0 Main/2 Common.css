@@ -1,7 +1,7 @@
 /* FOCUS INDICATOR */
 :focus {
-    outline: 4px dashed blueviolet;
-    outline-offset: 3px;
+    outline: 4px groove blueviolet;
+    outline-offset: 0px;
   }
   
 /* SITE-WIDE STYLING ======================================================== */
@@ -18,7 +18,7 @@
   /* HEADER STYLING */
   header {
     background: lightgreen;
-    border: 10px groove white;
+    border: 10px groove blueviolet;
     margin: 10px;
     padding: 10px;
   }
@@ -37,7 +37,7 @@
   /* FOOTER STYLING */
   footer {
     background: mediumseagreen;
-    border: 10px groove white;
+    border: 10px groove blueviolet;
     margin: 5px;
     padding: 10px;
   }
@@ -156,16 +156,21 @@
 .main-nav-item button {
   padding: 0;
   border: none;
+  width: 30px;
+  height: 20px;
   background: transparent;
-  cursor: pointer;
-  color: blue;
+  cursor: cell;
+  color: black;
 }
 
 .main-nav-item button svg {
-  width: 20px;
+  padding: 0;
+  border: 1px solid black;
+  width: 30px;
   height: 20px;
   fill: blue;
 }
+
 
 /* SUB-MENU ======================================================== */
 
@@ -177,7 +182,9 @@
   top: 47px;
   left: 0px;
   background-color: mediumseagreen;
-  border: 2px solid #000;
+  border-left: 4px solid black;
+  border-right: 4px solid black;
+  border-top: 2px solid black;
   padding-left: 0;
   margin-left: 0;
   list-style: none;
@@ -186,13 +193,13 @@
 /* SUB-MENU ITEMS */
 .main-nav-sub-menu-item {
   display: block;
-  border-bottom: 2px solid #004400;
+  border-bottom: 4px dashed black;
 }
 
 /* SUB-MENU LINKS */
 .main-nav-sub-menu-item a {
   margin-left: 0px;
-  font-size: 40px;
+  font-size: 20px;
   padding: 5px 10px;
   display: block;
   text-decoration: none;
