@@ -167,8 +167,10 @@
   fill: blue;
 }
 
+/* SUB-MENU ======================================================== */
+
 /* SUB-MENU WRAPPER (HIDDEN BY DEFAULT) */
-nav ul ul {
+.main-nav-sub-menu {
   display: none;
   position: absolute;
   text-align: left;
@@ -182,15 +184,13 @@ nav ul ul {
 }
 
 /* SUB-MENU ITEMS */
-nav ul ul li {
+.main-nav-sub-menu-item {
   display: block;
-
-  /* OPTIONAL: Add divider lines if you want visual structure */
   border-bottom: 2px solid #004400;
 }
 
-/* SUB-MENU LINKS — cleaned up spacing */
-nav ul ul li a {
+/* SUB-MENU LINKS */
+.main-nav-sub-menu-item a {
   margin-left: 0px;
   font-size: 40px;
   padding: 5px 10px;
@@ -200,6 +200,6 @@ nav ul ul li a {
 }
 
 /* WHEN MENU IS EXPANDED */
-nav ul ul.expanded {
+.main-nav-sub-menu.expanded {
   display: block;
 }
