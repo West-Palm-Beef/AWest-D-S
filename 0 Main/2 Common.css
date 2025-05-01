@@ -1,24 +1,27 @@
 /* FOCUS INDICATOR */
 :focus {
-    outline: 3px dotted blueviolet;
-    outline-offset: 0px;
+    outline: none;
+    box-shadow:
+    0 0 0 1px #000000,
+    0 0 0 3px #FFFFFF;
   }
   
 /* SITE-WIDE STYLING ======================================================== */
 
   /* SITE BACKGROUND */
   body {
-    background: transparent;
-    margin: 10px;
-    padding: 10px; 
-    font-family: 'Times New Roman', Times, serif; 
+    background: #7D68AD;
+    box-shadow: 0 0 5px #000000;
     color: #000000;
+    margin: 10px;
+    padding: 10px;
+    font-family: 'Times New Roman', Times, serif; 
   }
   
   /* HEADER STYLING */
   header {
-    background: #D6E5BD;
-    border: 20px solid #DCCCEC;
+    background: #C7E0FF;
+    border: 10px solid #7ED6CA;
     box-shadow: 0 0 10px black;
     margin: 10px;
     padding: 10px;
@@ -26,6 +29,7 @@
   
   /* MAIN CONTENT STYLING */
   main {
+    background: #C7E0FF;
     border: 10px solid #DCCCEC;
     box-shadow: 0 0 30px black;
     margin-top: 20px;
@@ -37,7 +41,7 @@
   
   /* FOOTER STYLING */
   footer {
-    background: #D6E5BD;
+    background: #C7E0FF;
     border: 10px solid #DCCCEC;
     box-shadow: 0 0 10px black;
     margin: 5px;
@@ -55,11 +59,16 @@
     height: 1px;
     overflow: hidden;
     clip: rect(1px, 1px, 1px, 1px);
-    color: #000000;
   }
   
   /* SKIP TO MAIN - FOCUSED */
   .skip-to-main-link:focus {
+    display: inline-block;
+    margin: 5px;
+    color: #C7E0FF;
+    background: #000000;
+    border: 2px solid #FFFFFF;
+    text-decoration: none;
     position: static;
     width: auto;
     height: auto;
@@ -67,8 +76,7 @@
     clip: auto;
     left: auto;
     top: auto;
-    color: #000000;
-    border: 2px solid blue;
+    padding: 5px;
   }
 
   /* SKIP TO FOOTER - HIDDEN */
@@ -84,6 +92,12 @@
 
   /* SKIP TO FOOTER - FOCUSED */
   .skip-to-footer-link:focus {
+    display: inline-block;
+    margin: 5px;
+    color: #C7E0FF;
+    background: #000000;
+    border: 2px dashed #FFFFFF;
+    text-decoration: none;
     position: static;
     width: auto;
     height: auto;
@@ -91,8 +105,8 @@
     clip: auto;
     left: auto;
     top: auto;
-    color: #000000;
-    border: 2px solid blue;
+    padding: 5px;
+    margin: 5px;
   }
   
   /* BACK TO TOP - HIDDEN */
@@ -108,6 +122,11 @@
   
   /* BACK TO TOP - FOCUSED */
   .back-to-top:focus {
+    display: inline-block;
+    margin: 5px;
+    color: #C7E0FF;
+    background: #000000;
+    border: 2px dashed #FFFFFF;
     position: static;
     width: auto;
     height: auto;
@@ -115,8 +134,8 @@
     clip: auto;
     left: auto;
     top: auto;
-    color: #000000;
-    border: 2px solid blue;
+    padding: 5px;
+    margin: 5px;
   }
   
   
@@ -124,9 +143,10 @@
 
 /* MAIN NAV MENU STYLING */
 .main-nav-menu {
-  background: mediumseagreen;
-  border: 1px solid #D2C7E5;
+  background: #D2C7E5;
+  border: 2px solid mediumseagreen;
   box-shadow: 0 0 10px black;
+  margin: 2px;
 
 }
 
@@ -154,7 +174,18 @@
   font-size: 23pt;
   margin-left: 40px;
   text-decoration: underline;
-  color: #000;
+  color: #000000;
+  padding: 2px 4px;
+  border-radius: 4px;
+}
+
+.main-nav-item > a:focus {
+  color: #000000;
+  background: #7ED6CA;
+  display: inline;
+  font-size: 23pt;
+  margin-left: 40px;
+  text-decoration: underline;
 }
 
 /* BUTTON STYLING */
