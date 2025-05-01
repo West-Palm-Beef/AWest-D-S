@@ -8,26 +8,26 @@
 
   /* SITE BACKGROUND */
   body {
-    background: #2b2d42;
+    background: transparent;
     margin: 10px;
     padding: 10px; 
     font-family: 'Times New Roman', Times, serif; 
-    color: white;
+    color: #000000;
   }
   
   /* HEADER STYLING */
   header {
-    background: lightgreen;
-    border: 10px solid #bbaed4;
-    box-shadow: 0 0 10px #D2C7E5;
+    background: #D6E5BD;
+    border: 20px solid #DCCCEC;
+    box-shadow: 0 0 10px black;
     margin: 10px;
     padding: 10px;
   }
   
   /* MAIN CONTENT STYLING */
   main {
-    border: 10px solid #bbaed4;
-    box-shadow: 0 0 10px #D2C7E5;
+    border: 10px solid #DCCCEC;
+    box-shadow: 0 0 30px black;
     margin-top: 20px;
     margin-bottom: 20px;
     margin-left: 50px;
@@ -37,9 +37,9 @@
   
   /* FOOTER STYLING */
   footer {
-    background: mediumseagreen;
-    border: 10px solid #bbaed4;
-    box-shadow: 0 0 10px #D2C7E5;
+    background: #D6E5BD;
+    border: 10px solid #DCCCEC;
+    box-shadow: 0 0 10px black;
     margin: 5px;
     padding: 10px;
   }
@@ -55,6 +55,7 @@
     height: 1px;
     overflow: hidden;
     clip: rect(1px, 1px, 1px, 1px);
+    color: #000000;
   }
   
   /* SKIP TO MAIN - FOCUSED */
@@ -66,7 +67,7 @@
     clip: auto;
     left: auto;
     top: auto;
-    color: white;
+    color: #000000;
     border: 2px solid blue;
   }
 
@@ -90,7 +91,7 @@
     clip: auto;
     left: auto;
     top: auto;
-    color: white;
+    color: #000000;
     border: 2px solid blue;
   }
   
@@ -114,7 +115,7 @@
     clip: auto;
     left: auto;
     top: auto;
-    color: white;
+    color: #000000;
     border: 2px solid blue;
   }
   
@@ -124,7 +125,9 @@
 /* MAIN NAV MENU STYLING */
 .main-nav-menu {
   background: mediumseagreen;
-  border: 2px solid black;
+  border: 1px solid #D2C7E5;
+  box-shadow: 0 0 10px black;
+
 }
 
 /* NAV LIST CONTAINER */
