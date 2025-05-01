@@ -1,11 +1,11 @@
-/* CSS styles */
-
 /* FOCUS INDICATOR */
 :focus {
     outline: 4px dashed blueviolet;
     outline-offset: 3px;
   }
   
+/* SITE-WIDE STYLING ======================================================== */
+
   /* SITE BACKGROUND */
   body {
     background: black;
@@ -42,7 +42,8 @@
     padding: 10px;
   }
   
-/* SKIP CONTENT LINKS =====================*/
+/* ======================================================== */
+  
   /* SKIP TO MAIN - HIDDEN */
   .skip-to-main-link {
     position: absolute;
@@ -116,70 +117,89 @@
   }
   
   
-  /* MAIN NAV MENU */
-  
-  /* SURFACE MAIN NAV MENU STYLING */
-  nav ul {
-    list-style: none;
-    padding-top: 0px;
-    padding-bottom: 0px;
-    padding-left: 250px;
-    padding-right: 0px;
-    background: mediumseagreen;
-    margin-top: 10px;
-    margin-bottom: 0px;
-    margin-left: 20px;
-    margin-right: 20px;
-  }
-  
-  nav ul li {
-    position: relative;
-    display: inline-block;
-    margin-right: 20px;
-  }
-  
-  
-  nav ul li a {
-    display: inline-block;
-    font-size: 40px;
-    margin-left: 180px;
-    text-decoration: underline;
-    color: #000;
-  }
-  
-  nav ul li button {
-    padding: 0px;
-    border: none;
-    cursor: pointer;
-    color: blue;
-  }
-  
-  nav ul li button svg {
-    width: 20px;
-    height: 20px;
-    fill: blue;
-  }
-  
-  /* EXPANDED NAV MENU */
-  nav ul ul {
-    display: none;
-    position: absolute;
-    text-align: left;
-    top: 46px;
-    left: 0px;
-    padding: 10px;
-    background-color: #fff;
-    border: 2px solid #000;
-  }
-  
-  nav ul ul li {
-    display: block;
-  }
-  
-  nav ul ul.expanded {
-    display: block;
-  }
-  
-  /*TEST CODE*/
-  
-  
+/* MAIN NAV MENU STYLING ======================================================== */
+
+/* MAIN NAV MENU STYLING */
+.main-nav-menu {
+  background: mediumseagreen;
+  border: 2px solid black;
+}
+
+/* NAV LIST CONTAINER */
+.main-nav-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* TOP-LEVEL MENU ITEMS */
+.main-nav-item {
+  position: relative;
+  display: inline-block;
+  margin-right: 0px;
+}
+
+/* TOP-LEVEL LINKS ONLY — cleaned up to NOT affect submenu items */
+.main-nav-item > a {
+  display: inline-block;
+  font-size: 23pt;
+  margin-left: 40px;
+  text-decoration: underline;
+  color: #000;
+}
+
+/* BUTTON STYLING */
+.main-nav-item button {
+  padding: 0;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  color: blue;
+}
+
+.main-nav-item button svg {
+  width: 20px;
+  height: 20px;
+  fill: blue;
+}
+
+/* SUB-MENU WRAPPER (HIDDEN BY DEFAULT) */
+nav ul ul {
+  display: none;
+  position: absolute;
+  text-align: left;
+  top: 47px;
+  left: 0px;
+  background-color: mediumseagreen;
+  border: 2px solid #000;
+  padding-left: 0;
+  margin-left: 0;
+  list-style: none;
+}
+
+/* SUB-MENU ITEMS */
+nav ul ul li {
+  display: block;
+
+  /* OPTIONAL: Add divider lines if you want visual structure */
+  border-bottom: 2px solid #004400;
+}
+
+/* SUB-MENU LINKS — cleaned up spacing */
+nav ul ul li a {
+  margin-left: 0px;
+  font-size: 40px;
+  padding: 5px 10px;
+  display: block;
+  text-decoration: none;
+  color: black;
+}
+
+/* WHEN MENU IS EXPANDED */
+nav ul ul.expanded {
+  display: block;
+}
