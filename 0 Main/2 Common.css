@@ -1,6 +1,6 @@
 /* FOCUS INDICATOR */
 :focus {
-    outline: 4px groove blueviolet;
+    outline: 3px dotted blueviolet;
     outline-offset: 0px;
   }
   
@@ -8,7 +8,7 @@
 
   /* SITE BACKGROUND */
   body {
-    background: black;
+    background: #2b2d42;
     margin: 10px;
     padding: 10px; 
     font-family: 'Times New Roman', Times, serif; 
@@ -18,15 +18,16 @@
   /* HEADER STYLING */
   header {
     background: lightgreen;
-    border: 10px groove blueviolet;
+    border: 10px solid #bbaed4;
+    box-shadow: 0 0 10px #D2C7E5;
     margin: 10px;
     padding: 10px;
   }
   
   /* MAIN CONTENT STYLING */
   main {
-    background-image: url('../Assets/Main\ Content\ Background.png');
-    border: 10px groove blueviolet;
+    border: 10px solid #bbaed4;
+    box-shadow: 0 0 10px #D2C7E5;
     margin-top: 20px;
     margin-bottom: 20px;
     margin-left: 50px;
@@ -37,7 +38,8 @@
   /* FOOTER STYLING */
   footer {
     background: mediumseagreen;
-    border: 10px groove blueviolet;
+    border: 10px solid #bbaed4;
+    box-shadow: 0 0 10px #D2C7E5;
     margin: 5px;
     padding: 10px;
   }
