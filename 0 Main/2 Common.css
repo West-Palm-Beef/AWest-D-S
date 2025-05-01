@@ -1,9 +1,12 @@
 /* CSS styles */
+
+/* FOCUS INDICATOR */
 *:focus {
-    outline: 4px dashed seagreen; /* Example: Blue outline */
-    outline-offset: 3px; /* Adjust the distance between the outline and the element */
+    outline: 4px dashed blueviolet;
+    outline-offset: 3px;
   }
   
+  /* SITE BACKGROUND */
   body {
     background: black;
     margin: 10px;
@@ -12,28 +15,35 @@
     color: white;
   }
   
+  /* HEADER STYLING */
   header {
-    background: darkgreen;
+    background: lightgreen;
     border: 10px groove white;
     margin: 10px;
     padding: 10px;
   }
   
+  /* MAIN CONTENT STYLING */
   main {
     background-image: url('../Assets/Main\ Content\ Background.png');
-    border: 10px groove white;
-    margin: 20px;
+    border: 10px groove blueviolet;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 50px;
+    margin-right: 50px;
     padding: 10px;
   }
   
+  /* FOOTER STYLING */
   footer {
-    background: darkgreen;
+    background: mediumseagreen;
     border: 10px groove white;
     margin: 5px;
     padding: 10px;
   }
   
-  /* Hide skip link visually but keep it accessible */
+
+  /* SKIP TO MAIN - HIDDEN */
   #main-link {
     position: absolute;
     left: -10000px;
@@ -44,7 +54,7 @@
     clip: rect(1px, 1px, 1px, 1px);
   }
   
-  /* Show skip link when it receives focus */
+  /* SKIP TO MAIN - FOCUSED */
   #main-link:focus {
     position: static; /* Reset position */
     width: auto; /* Reset width */
@@ -57,7 +67,7 @@
     border: 2px solid blue; /* Example: Highlight link with yellow background */
   }
   
-  /* Hide skip link visually but keep it accessible */
+  /* BACK TO TOP - HIDDEN */
   #footer-link {
     position: absolute;
     left: -10000px;
@@ -68,7 +78,7 @@
     clip: rect(1px, 1px, 1px, 1px);
   }
   
-  /* Show skip link when it receives focus */
+  /* BACK TO TOP - FOCUSED */
   #footer-link:focus {
     position: static; /* Reset position */
     width: auto; /* Reset width */
@@ -82,12 +92,20 @@
   }
   
   
-  /*MAIN NAV MENU*/
+  /* MAIN NAV MENU */
   
+  /* SURFACE MAIN NAV MENU STYLING */
   nav ul {
     list-style: none;
-    padding: 0;
-    background: whitesmoke;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    padding-left: 250px;
+    padding-right: 0px;
+    background: mediumseagreen;
+    margin-top: 10px;
+    margin-bottom: 0px;
+    margin-left: 20px;
+    margin-right: 20px;
   }
   
   nav ul li {
@@ -95,6 +113,7 @@
     display: inline-block;
     margin-right: 20px;
   }
+  
   
   nav ul li a {
     display: inline-block;
@@ -117,6 +136,7 @@
     fill: blue;
   }
   
+  /* EXPANDED NAV MENU */
   nav ul ul {
     display: none;
     position: absolute;

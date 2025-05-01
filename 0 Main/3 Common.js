@@ -5,18 +5,6 @@
 
 document.addEventListener('DOMContentLoaded', function() {
 
-//-Code for referencing another HTML document
-    fetch('./1 Common.html')
-      .then(response => response.text())
-      .then(html => {
-//--Insert the fetched HTML content into the current page
-            document.body.innerHTML += html;
-          })
-      .catch(error => {
-          console.error('Error fetching document.html:', error);
-        });
-  
-
         
 //-DROPDOWN MENU
     const dropdownButtons = document.querySelectorAll('.has-main-nav-dropdown button');
