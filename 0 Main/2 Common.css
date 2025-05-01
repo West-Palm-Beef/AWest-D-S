@@ -1,7 +1,7 @@
 /* CSS styles */
 
 /* FOCUS INDICATOR */
-*:focus {
+:focus {
     outline: 4px dashed blueviolet;
     outline-offset: 3px;
   }
