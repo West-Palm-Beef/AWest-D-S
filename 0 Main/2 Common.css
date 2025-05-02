@@ -5,57 +5,7 @@
     0 0 0 1px #000000,
     0 0 0 3px #FFFFFF;
   }
-  
-/* SITE-WIDE STYLING ======================================================== */
 
-  /* SITE BACKGROUND */
-  .Homepage-main-body {
-    display: block;
-    background: #7D68AD;
-    box-shadow: 0 0 5px #000000;
-    margin: 10px;
-    padding: 10px;
-  }
-  
-  /* HEADER STYLING */
-  .Homepage-main-header {
-    background: #8797D4;
-    border: 10px solid #7ED6CA;
-    box-shadow: 0 0 10px black;
-    margin: 10px;
-    padding: 10px;
-  }
-  
-  /* MAIN CONTENT STYLING */
-  .Homepage-main-main-content {
-    background: #8797D4;
-    border: 10px solid #7ED6CA;
-    box-shadow: 0 0 30px black;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    margin-left: 50px;
-    margin-right: 50px;
-    padding: 10px;
-  }
-
-  .Homepage-main-h1 {
-    color: #FFFFFF;
-    font-weight: 900;
-    font-family: 'Times New Roman', Times, serif;
-    text-shadow: -1px 1px 0.5px #000000
-  }
-  
-  /* FOOTER STYLING */
-  .Homepage-main-footer {
-    background: #8797D4;
-    border: 10px solid #7ED6CA;
-    box-shadow: 0 0 10px black;
-    margin: 5px;
-    padding: 10px;
-  }
-  
-/* ======================================================== */
-  
   /* SKIP TO MAIN - HIDDEN */
   .Homepage-skip-to-main-link {
     position: absolute;
@@ -129,10 +79,10 @@
   /* BACK TO TOP - FOCUSED */
   .Homepage-back-to-top:focus {
     display: inline-block;
-    margin: 5px;
     color: #C7E0FF;
     background: #000000;
     border: 2px dashed #FFFFFF;
+    text-decoration: none;
     position: static;
     width: auto;
     height: auto;
@@ -143,7 +93,150 @@
     padding: 5px;
     margin: 5px;
   }
+
+   /* SKIP TO MAIN - HIDDEN */
+  .Homepage-skip-to-main-link {
+    position: absolute;
+    left: -10000px;
+    top: auto;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    clip: rect(1px, 1px, 1px, 1px);
+  }
+    
+    /* SKIP TO MAIN - FOCUSED */
+    .Homepage-skip-to-main-link:focus {
+      display: inline-block;
+      margin: 5px;
+      color: #C7E0FF;
+      background: #000000;
+      border: 2px solid #FFFFFF;
+      text-decoration: none;
+      position: static;
+      width: auto;
+      height: auto;
+      overflow: visible;
+      clip: auto;
+      left: auto;
+      top: auto;
+      padding: 5px;
+    }
   
+    /* SKIP TO FOOTER - HIDDEN */
+    .Homepage-skip-to-footer-link {
+      position: absolute;
+      left: -10000px;
+      top: auto;
+      width: 1px;
+      height: 1px;
+      overflow: hidden;
+      clip: rect(1px, 1px, 1px, 1px);
+    }
+  
+    /* SKIP TO FOOTER - FOCUSED */
+    .Homepage-skip-to-footer-link:focus {
+      display: inline-block;
+      margin: 5px;
+      color: #C7E0FF;
+      background: #000000;
+      border: 2px dashed #FFFFFF;
+      text-decoration: none;
+      position: static;
+      width: auto;
+      height: auto;
+      overflow: visible;
+      clip: auto;
+      left: auto;
+      top: auto;
+      padding: 5px;
+      margin: 5px;
+    }
+    
+    /* BACK TO TOP - HIDDEN */
+    .Homepage-back-to-top {
+      position: absolute;
+      left: -10000px;
+      top: auto;
+      width: 1px;
+      height: 1px;
+      overflow: hidden;
+      clip: rect(1px, 1px, 1px, 1px);
+    }
+    
+    /* BACK TO TOP - FOCUSED */
+    .Homepage-back-to-top:focus {
+      display: inline-block;
+      color: #C7E0FF;
+      background: #000000;
+      border: 2px dashed #FFFFFF;
+      text-decoration: none;
+      position: static;
+      width: auto;
+      height: auto;
+      overflow: visible;
+      clip: auto;
+      left: auto;
+      top: auto;
+      padding: 5px;
+      margin: 5px;
+    }
+
+/* HOMEPAGE WIDE STYLING ======================================================== */
+
+  /* SITE BACKGROUND */
+  .Homepage-main-body {
+    display: block;
+    background: #7D68AD;
+    box-shadow: 0 0 10px #CFCFFF;
+    margin: 10px;
+    padding: 10px;
+  }
+
+  .Homepage-main-logo {
+    margin: 10px;
+    padding: 10px;
+  }
+  
+  /* HEADER STYLING */
+  .Homepage-main-header {
+    background: #8797D4;
+    border: 5px solid #7ED6CA;
+    box-shadow: 0 0 10px #D6E5DB;
+    margin: 0px;
+    padding: 0px;
+  }
+  
+  /* MAIN CONTENT STYLING */
+  .Homepage-main-main-content {
+    background: #8797D4;
+    border: 5px solid #7ED6CA;
+    box-shadow: 0 0 10px #D6E5DB;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 50px;
+    margin-right: 50px;
+    padding: 10px;
+  }
+
+  .Homepage-main-h1 {
+    color: #FFFFFF;
+    font-weight: 900;
+    font-family: 'Times New Roman', Times, serif;
+    text-shadow: -1px 1px 0.5px #000000
+  }
+  
+  /* FOOTER STYLING */
+  .Homepage-main-footer {
+    background: #8797D4;
+    border: 5px solid #7ED6CA;
+    box-shadow: 0 0 10px #D6E5DB;
+    margin: 5px;
+    padding: 10px;
+  }
+  
+/* ======================================================== */
+
   
 /* MAIN NAV MENU STYLING ======================================================== */
 
@@ -152,8 +245,14 @@
   background: #DF81A2;
   border: 2px solid #7ED6CA;
   box-shadow: 0 0 10px black;
-  margin: 2px;
-
+  margin-left: 200px;
+  margin-right: 200px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding-left: 0px;
+  padding-right: 0px;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 
 /* NAV LIST CONTAINER */
@@ -163,8 +262,8 @@
   align-items: center;
   flex-wrap: wrap;
   list-style: none;
-  padding: 0;
-  margin: 0;
+  padding: 0px;
+  margin: 0px;
 }
 
 /* TOP-LEVEL MENU ITEMS */
@@ -174,7 +273,7 @@
   margin-right: 0px;
 }
 
-/* TOP-LEVEL LINKS ONLY — cleaned up to NOT affect submenu items */
+/* TOP-LEVEL NAV LINKS ONLY*/
 .Homepage-main-nav-item > a {
   display: inline-block;
   font-size: 23pt;
@@ -196,21 +295,31 @@
 
 /* BUTTON STYLING */
 .Homepage-main-nav-item button {
-  padding: 0;
+  padding: 0px;
   border: none;
   width: 30px;
   height: 20px;
   background: transparent;
   cursor: cell;
-  color: black;
+  color: #000000;
+}
+
+.Homepage-main-nav-item button:focus {
+  background: #7ED6CA;
+  color: #000000;
+  padding: 0px;
+  border: none;
+  width: 30px;
+  height: 20px;
+  cursor: cell;
 }
 
 .Homepage-main-nav-item button svg {
-  padding: 0;
-  border: 1px solid black;
+  padding: 0px;
+  border: 1px solid #000000;
   width: 30px;
   height: 20px;
-  fill: blue;
+  fill: none;
 }
 
 
@@ -223,10 +332,10 @@
   text-align: left;
   top: 47px;
   left: 0px;
-  background-color: mediumseagreen;
-  border-left: 4px solid black;
-  border-right: 4px solid black;
-  border-top: 2px solid black;
+  background-color: #7ED6CA;
+  border-left: 4px solid #E4F0C9;
+  border-right: 4px solid #E4F0C9;
+  border-top: 2px solid #E4F0C9;
   padding-left: 0;
   margin-left: 0;
   list-style: none;
@@ -235,7 +344,7 @@
 /* SUB-MENU ITEMS */
 .Homepage-main-nav-sub-menu-item {
   display: block;
-  border-bottom: 4px dashed black;
+  border-bottom: 4px dashed #E4F0C9;
 }
 
 /* SUB-MENU LINKS */
@@ -252,3 +361,4 @@
 .Homepage-main-nav-sub-menu.expanded {
   display: block;
 }
+
