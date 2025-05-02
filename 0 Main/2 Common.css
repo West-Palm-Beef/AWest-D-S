@@ -9,18 +9,17 @@
 /* SITE-WIDE STYLING ======================================================== */
 
   /* SITE BACKGROUND */
-  body {
+  .Homepage-main-body {
+    display: block;
     background: #7D68AD;
     box-shadow: 0 0 5px #000000;
-    color: #000000;
     margin: 10px;
     padding: 10px;
-    font-family: 'Times New Roman', Times, serif; 
   }
   
   /* HEADER STYLING */
-  header {
-    background: #C7E0FF;
+  .Homepage-main-header {
+    background: #8797D4;
     border: 10px solid #7ED6CA;
     box-shadow: 0 0 10px black;
     margin: 10px;
@@ -28,9 +27,9 @@
   }
   
   /* MAIN CONTENT STYLING */
-  main {
-    background: #C7E0FF;
-    border: 10px solid #DCCCEC;
+  .Homepage-main-main-content {
+    background: #8797D4;
+    border: 10px solid #7ED6CA;
     box-shadow: 0 0 30px black;
     margin-top: 20px;
     margin-bottom: 20px;
@@ -38,11 +37,18 @@
     margin-right: 50px;
     padding: 10px;
   }
+
+  .Homepage-main-h1 {
+    color: #FFFFFF;
+    font-weight: 900;
+    font-family: 'Times New Roman', Times, serif;
+    text-shadow: -1px 1px 0.5px #000000
+  }
   
   /* FOOTER STYLING */
-  footer {
-    background: #C7E0FF;
-    border: 10px solid #DCCCEC;
+  .Homepage-main-footer {
+    background: #8797D4;
+    border: 10px solid #7ED6CA;
     box-shadow: 0 0 10px black;
     margin: 5px;
     padding: 10px;
@@ -51,7 +57,7 @@
 /* ======================================================== */
   
   /* SKIP TO MAIN - HIDDEN */
-  .skip-to-main-link {
+  .Homepage-skip-to-main-link {
     position: absolute;
     left: -10000px;
     top: auto;
@@ -62,7 +68,7 @@
   }
   
   /* SKIP TO MAIN - FOCUSED */
-  .skip-to-main-link:focus {
+  .Homepage-skip-to-main-link:focus {
     display: inline-block;
     margin: 5px;
     color: #C7E0FF;
@@ -80,7 +86,7 @@
   }
 
   /* SKIP TO FOOTER - HIDDEN */
-  .skip-to-footer-link {
+  .Homepage-skip-to-footer-link {
     position: absolute;
     left: -10000px;
     top: auto;
@@ -91,7 +97,7 @@
   }
 
   /* SKIP TO FOOTER - FOCUSED */
-  .skip-to-footer-link:focus {
+  .Homepage-skip-to-footer-link:focus {
     display: inline-block;
     margin: 5px;
     color: #C7E0FF;
@@ -110,7 +116,7 @@
   }
   
   /* BACK TO TOP - HIDDEN */
-  .back-to-top {
+  .Homepage-back-to-top {
     position: absolute;
     left: -10000px;
     top: auto;
@@ -121,7 +127,7 @@
   }
   
   /* BACK TO TOP - FOCUSED */
-  .back-to-top:focus {
+  .Homepage-back-to-top:focus {
     display: inline-block;
     margin: 5px;
     color: #C7E0FF;
@@ -142,16 +148,16 @@
 /* MAIN NAV MENU STYLING ======================================================== */
 
 /* MAIN NAV MENU STYLING */
-.main-nav-menu {
-  background: #D2C7E5;
-  border: 2px solid mediumseagreen;
+.Homepage-main-nav-menu {
+  background: #DF81A2;
+  border: 2px solid #7ED6CA;
   box-shadow: 0 0 10px black;
   margin: 2px;
 
 }
 
 /* NAV LIST CONTAINER */
-.main-nav-list {
+.Homepage-main-nav-list {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -162,14 +168,14 @@
 }
 
 /* TOP-LEVEL MENU ITEMS */
-.main-nav-item {
+.Homepage-main-nav-item {
   position: relative;
   display: inline-block;
   margin-right: 0px;
 }
 
 /* TOP-LEVEL LINKS ONLY — cleaned up to NOT affect submenu items */
-.main-nav-item > a {
+.Homepage-main-nav-item > a {
   display: inline-block;
   font-size: 23pt;
   margin-left: 40px;
@@ -179,7 +185,7 @@
   border-radius: 4px;
 }
 
-.main-nav-item > a:focus {
+.Homepage-main-nav-item > a:focus {
   color: #000000;
   background: #7ED6CA;
   display: inline;
@@ -189,7 +195,7 @@
 }
 
 /* BUTTON STYLING */
-.main-nav-item button {
+.Homepage-main-nav-item button {
   padding: 0;
   border: none;
   width: 30px;
@@ -199,7 +205,7 @@
   color: black;
 }
 
-.main-nav-item button svg {
+.Homepage-main-nav-item button svg {
   padding: 0;
   border: 1px solid black;
   width: 30px;
@@ -211,7 +217,7 @@
 /* SUB-MENU ======================================================== */
 
 /* SUB-MENU WRAPPER (HIDDEN BY DEFAULT) */
-.main-nav-sub-menu {
+.Homepage-main-nav-sub-menu {
   display: none;
   position: absolute;
   text-align: left;
@@ -227,13 +233,13 @@
 }
 
 /* SUB-MENU ITEMS */
-.main-nav-sub-menu-item {
+.Homepage-main-nav-sub-menu-item {
   display: block;
   border-bottom: 4px dashed black;
 }
 
 /* SUB-MENU LINKS */
-.main-nav-sub-menu-item a {
+.Homepage-main-nav-sub-menu-item a {
   margin-left: 0px;
   font-size: 20px;
   padding: 5px 10px;
@@ -243,6 +249,6 @@
 }
 
 /* WHEN MENU IS EXPANDED */
-.main-nav-sub-menu.expanded {
+.Homepage-main-nav-sub-menu.expanded {
   display: block;
 }
