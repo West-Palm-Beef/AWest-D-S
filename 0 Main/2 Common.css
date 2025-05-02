@@ -292,6 +292,15 @@
   text-decoration: underline;
 }
 
+.Homepage-main-nav-item > a:hover {
+  color: #000000;
+  background: #7ED6CA;
+  display: inline;
+  font-size: 23pt;
+  margin-left: 40px;
+  text-decoration: underline;
+}
+
 /* BUTTON STYLING */
 .Homepage-main-nav-item button {
   padding: 0px;
@@ -299,7 +308,6 @@
   width: 30px;
   height: 20px;
   background: transparent;
-  cursor: cell;
   color: #000000;
 }
 
@@ -310,7 +318,16 @@
   border: none;
   width: 30px;
   height: 20px;
-  cursor: cell;
+}
+
+.Homepage-main-nav-item button:hover {
+  background: #7ED6CA;
+  color: #000000;
+  padding: 0px;
+  border: none;
+  width: 30px;
+  height: 20px;
+  cursor: pointer;
 }
 
 .Homepage-main-nav-item button svg {
@@ -328,15 +345,15 @@
 .Homepage-main-nav-sub-menu {
   display: none;
   position: absolute;
-  text-align: left;
+  text-align: center;
   top: 47px;
   left: 0px;
   background-color: #7ED6CA;
   border-left: 4px solid #E4F0C9;
   border-right: 4px solid #E4F0C9;
-  border-top: 2px solid #E4F0C9;
-  padding-left: 0;
-  margin-left: 0;
+  border-top: 4px solid #E4F0C9;
+  padding-left: 0px;
+  margin-left: 0px;
   list-style: none;
 }
 
@@ -392,11 +409,11 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background: #df81a2;
-  color: white;
+  background: #DF81A2;
+  color: #000000;
   font-size: 2rem;
   font-weight: bold;
-  border: 2px solid black;
+  border: 3px solid #E4F0C9;
   box-sizing: border-box;
   margin: 2px;
 }
@@ -405,6 +422,26 @@
   background: #7ed6ca;
   color: black;
   border: 2px solid #000;
+  font-size: 2rem;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  user-select: none;
+}
+
+.carousel-button:focus {
+  background: #7D68DA;
+  color: #7ed6ca;
+  border: 2px solid #000000;
+  font-size: 2rem;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  user-select: none;
+}
+
+.carousel-button:hover {
+  background: #7D68DA;
+  color: #7ed6ca;
+  border: 2px solid #000000;
   font-size: 2rem;
   padding: 0.5rem 1rem;
   cursor: pointer;
