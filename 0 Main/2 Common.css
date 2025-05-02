@@ -237,7 +237,6 @@
     padding: 10px;
   }
 
-  
 /* MAIN NAV MENU STYLING ======================================================== */
 
 /* MAIN NAV MENU STYLING */
@@ -362,3 +361,57 @@
   display: block;
 }
 
+
+
+/* COMPONENTS ======================================================== */
+.carousel-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 600px;
+  margin: 20px auto;
+  position: relative;
+}
+
+.carousel-container {
+  width: 300px;
+  height: 200px;
+  overflow: hidden;
+  position: relative;
+}
+
+.carousel-tile {
+  width: 300px;
+  height: 200px;
+  flex-shrink: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #df81a2;
+  color: white;
+  font-size: 2rem;
+  font-weight: bold;
+  border: 2px solid black;
+  box-sizing: border-box;
+  position: absolute;
+  transition: transform 0.5s ease-in-out;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  z-index: 0;
+}
+
+.carousel-tile.active {
+  opacity: 1;
+  z-index: 1;
+}
+
+.carousel-button {
+  background: #7ed6ca;
+  color: black;
+  border: 2px solid #000;
+  font-size: 2rem;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  user-select: none;
+}
