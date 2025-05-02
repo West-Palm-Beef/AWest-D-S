@@ -77,7 +77,8 @@ document.addEventListener('DOMContentLoaded', function() {
   });
 
 
-//-CAROUSEL
+//-CAROUSEL========================================================
+
 const track = document.querySelector('.carousel-track');
 const tiles = document.querySelectorAll('.carousel-tile');
 const prevButton = document.querySelector('.carousel-button.prev');

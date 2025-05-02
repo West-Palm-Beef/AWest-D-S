@@ -4,8 +4,8 @@
 :focus {
     outline: none;
     box-shadow:
-    0 0 0 1px #000000,
-    0 0 0 3px #FFFFFF;
+    0px 0px 0px 1px #000000,
+    0px 0px 0px 3px #FFFFFF;
   }
 
 /* ======================================================== */
@@ -50,14 +50,14 @@
       color: #C7E0FF;
       background: #000000;
       border: 2px solid #FFFFFF;
-     text-decoration: none;
-     position: static;
-     width: auto;
+      text-decoration: none;
+      position: static;
+      width: auto;
       height: auto;
-     overflow: visible;
+      overflow: visible;
       clip: auto;
-     left: auto;
-     top: auto;
+      left: auto;
+      top: auto;
       padding: 5px;
     }
 
@@ -214,7 +214,7 @@
   .Homepage-main-body {
     display: block;
     background: #7D68AD;
-    box-shadow: 0 0 10px #CFCFFF;
+    box-shadow: 3px 3px 10px #CFCFFF;
     margin: 10px;
     padding: 10px;
   }
@@ -228,7 +228,7 @@
   .Homepage-main-header {
     background: #8797D4;
     border: 5px solid #7ED6CA;
-    box-shadow: 0 0 10px #D6E5DB;
+    box-shadow: 3px 3px 10px #D6E5DB;
     margin: 0px;
     padding: 0px;
   }
@@ -237,7 +237,7 @@
   .Homepage-main-main-content {
     background: #8797D4;
     border: 5px solid #7ED6CA;
-    box-shadow: 0 0 10px #D6E5DB;
+    box-shadow: 3px 3px 10px #D6E5DB;
     margin-top: 20px;
     margin-bottom: 20px;
     margin-left: 50px;
@@ -256,7 +256,7 @@
   .Homepage-main-footer {
     background: #8797D4;
     border: 5px solid #7ED6CA;
-    box-shadow: 0 0 10px #D6E5DB;
+    box-shadow: 3px 3px 10px #D6E5DB;
     margin: 5px;
     padding: 10px;
   }
@@ -267,7 +267,7 @@
 .Homepage-main-nav-menu {
   background: #DF81A2;
   border: 2px solid #7ED6CA;
-  box-shadow: 0 0 10px black;
+  box-shadow: 3px 3px 10px black;
   margin-left: 200px;
   margin-right: 200px;
   margin-top: 10px;
@@ -405,6 +405,7 @@
 
 
 /* COMPONENTS ======================================================== */
+
 .carousel-wrapper {
   display: flex;
   align-items: center;
@@ -426,18 +427,86 @@
   transition: transform 1.5s ease-in-out;
 }
 
+
+/* CAROUSEL TILES*/
+
 .carousel-tile {
-  width: 304px; /* PREVIOUS WAS 300 */
+  width: 300px;
   height: 200px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-color: #eee;
-  margin: 0 10px;
-  font-size: 1.2rem;
-  border-radius: 8px;
-  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  flex-shrink: 0;
+  box-sizing: border-box;
+  margin: 2px;
+  box-shadow: 3px 3px 2px black;
+  border: 1px solid #000000;
 }
+
+.carousel-tile-1 {
+  background: #DCCCEC;
+  color: #000000;
+  font-size: 14pt;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.carousel-tile-2 {
+  background: #BCD8EC;
+  color: #000000;
+  font-size: 14pt;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.carousel-tile-3 {
+  background: #D6E5BD;
+  color: #000000;
+  font-size: 14pt;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.carousel-tile-4 {
+  background: #F9E1A8;
+  color: #000000;
+  font-size: 12pt;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.carousel-tile-5 {
+  background: #FFDAB4;
+  color: #000000;
+  font-size: 14pt;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.carousel-tile-6 {
+  background: #FFCBE1;
+  color: #000000;
+  font-size: 12pt;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+/* CAROUSEL BUTTONS*/
 
 .carousel-button {
   background: #7ed6ca;
