@@ -91,9 +91,8 @@ function updateCarousel() {
   // Move the track to show the correct set of tiles
   track.style.transform = `translateX(-${currentIndex * tileWidth}px)`;
 
-  // Update aria-hidden attributes for each tile
+  // Update aria-hidden and tabindex for each tile
   tiles.forEach((tile, index) => {
-    // Hide tiles that are not in the visible range
     if (index < currentIndex || index >= currentIndex + tilesPerView) {
       tile.setAttribute('aria-hidden', 'true');
       tile.setAttribute('tabindex', '-1'); // Make sure these are skipped by keyboard navigation

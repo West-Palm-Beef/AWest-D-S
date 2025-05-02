@@ -83,27 +83,32 @@
 
 <!-- CAROUSEL-->
 
-      <div class="sr-only">
-          <p>This carousel displays 2 slides at a time.</p>
-          <p>Please use the Previous and Next buttons to move through the slides.</p>
-        </div>
-      <div class="carousel-wrapper">
-        <button aria-label="Previous slides" class="carousel-button prev">
-          <span aria-hidden="true">‹</span>
-        </button>
-        <div role="region" aria-label="Accessible Carousel Examples" class="carousel-container">
-          <div class="carousel-track">
-            <div role="group" class="carousel-tile" id="homepage-tile-1" aria-hidden="false">Tile 1</div>
-            <div role="group" class="carousel-tile" id="homepage-tile-2" aria-hidden="false">Tile 2</div>
-            <div role="group" class="carousel-tile" id="homepage-tile-3" aria-hidden="true" tabindex="-1">Tile 3</div>
-            <div role="group" class="carousel-tile" id="homepage-tile-4" aria-hidden="true" tabindex="-1">Tile 4</div>
-            <div role="group" class="carousel-tile" id="homepage-tile-5" aria-hidden="true" tabindex="-1">Tile 5</div>
-            <div role="group" class="carousel-tile" id="homepage-tile-6" aria-hidden="true" tabindex="-1">Tile 6</div>
-          </div>
-        </div>
-        <button aria-label="Next slides" class="carousel-button next">
-          <span aria-hidden="true">›</button>
-      </div>
+<div class="sr-only">
+  <p>This carousel displays 2 slides at a time.</p>
+  <p>Please use the Previous and Next buttons to move through the slides.</p>
+</div>
+
+<div class="carousel-wrapper">
+  <button aria-label="Previous slides" class="carousel-button prev">
+    <span aria-hidden="true">‹</span>
+  </button>
+
+  <!-- Main region only -->
+  <div role="region" aria-label="Accessible Carousel Examples" class="carousel-container">
+    <div class="carousel-track">
+      <div class="carousel-tile" id="homepage-tile-1" aria-hidden="false" tabindex="0">Tile 1</div>
+      <div class="carousel-tile" id="homepage-tile-2" aria-hidden="false" tabindex="0">Tile 2</div>
+      <div class="carousel-tile" id="homepage-tile-3" aria-hidden="true" tabindex="-1">Tile 3</div>
+      <div class="carousel-tile" id="homepage-tile-4" aria-hidden="true" tabindex="-1">Tile 4</div>
+      <div class="carousel-tile" id="homepage-tile-5" aria-hidden="true" tabindex="-1">Tile 5</div>
+      <div class="carousel-tile" id="homepage-tile-6" aria-hidden="true" tabindex="-1">Tile 6</div>
+    </div>
+  </div>
+
+  <button aria-label="Next slides" class="carousel-button next">
+    <span aria-hidden="true">›</span>
+  </button>
+</div>
 
       <div>
         <li>
