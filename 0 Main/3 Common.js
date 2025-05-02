@@ -78,30 +78,31 @@ document.addEventListener('DOMContentLoaded', function() {
 
 
 //-CAROUSEL
-const tiles = document.querySelectorAll(".carousel-tile");
-const leftBtn = document.getElementById("carousel-left");
-const rightBtn = document.getElementById("carousel-right");
+const track = document.querySelector('.carousel-track');
+const tiles = document.querySelectorAll('.carousel-tile');
+const prevButton = document.querySelector('.carousel-button.prev');
+const nextButton = document.querySelector('.carousel-button.next');
 
 let currentIndex = 0;
+const tilesPerView = 2;
+const tileWidth = 300; // Must match CSS
 
-function showTile(index) {
-  tiles.forEach((tile, i) => {
-    tile.classList.remove("active");
-    if (i === index) {
-      tile.classList.add("active");
-    }
-  });
+function updateCarousel() {
+  track.style.transform = `translateX(-${currentIndex * tileWidth}px)`;
 }
 
-leftBtn.addEventListener("click", () => {
-  currentIndex = (currentIndex - 1 + tiles.length) % tiles.length;
-  showTile(currentIndex);
+nextButton.addEventListener('click', () => {
+  if (currentIndex < tiles.length - tilesPerView) {
+    currentIndex += tilesPerView;
+    updateCarousel();
+  }
 });
 
-rightBtn.addEventListener("click", () => {
-  currentIndex = (currentIndex + 1) % tiles.length;
-  showTile(currentIndex);
+prevButton.addEventListener('click', () => {
+  if (currentIndex > 0) {
+    currentIndex -= tilesPerView;
+    updateCarousel();
+  }
 });
 
-//--Initialize
-showTile(currentIndex);
+window.addEventListener('resize', updateCarousel);
