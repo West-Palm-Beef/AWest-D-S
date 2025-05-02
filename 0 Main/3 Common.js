@@ -87,25 +87,6 @@ let currentIndex = 0;
 const tilesPerView = 2;
 const tileWidth = 304; // Must match CSS
 
-function updateTileLabels() {
-  tiles.forEach((tile, index) => {
-    const labelBase = `Slide ${index + 1}`;
-
-    // Only dynamic for first and last tiles
-    if (index === 0 || index === tiles.length - 1) {
-      // Determine if focus is coming from outside (neighbor)
-      const previous = index === 0 ? 1 : tiles.length - 2;
-      const comingFromNeighbor =
-        (index === 0 && currentIndex === 0 && document.activeElement === tiles[previous]) ||
-        (index === tiles.length - 1 && currentIndex === tiles.length - tilesPerView && document.activeElement === tiles[previous]);
-
-      tile.setAttribute('aria-label', comingFromNeighbor ? `New ${labelBase}` : labelBase);
-    } else {
-      tile.setAttribute('aria-label', labelBase);
-    }
-  });
-}
-
 function updateCarousel() {
   // Move the track to show the correct set of tiles
   track.style.transform = `translateX(-${currentIndex * tileWidth}px)`;
@@ -114,17 +95,15 @@ function updateCarousel() {
   tiles.forEach((tile, index) => {
     if (index < currentIndex || index >= currentIndex + tilesPerView) {
       tile.setAttribute('aria-hidden', 'true');
-      tile.setAttribute('tabindex', '-1');
+      tile.setAttribute('tabindex', '-1'); // Skip from keyboard navigation
     } else {
       tile.setAttribute('aria-hidden', 'false');
-      tile.setAttribute('tabindex', '0');
+      tile.setAttribute('tabindex', '0'); // Make these focusable again
     }
   });
-
-  updateTileLabels();
 }
 
-// Initial setup
+// Update on initial load to set aria-hidden properly
 updateCarousel();
 
 nextButton.addEventListener('click', () => {
@@ -141,4 +120,5 @@ prevButton.addEventListener('click', () => {
   }
 });
 
+// Ensure it works on resize as well
 window.addEventListener('resize', updateCarousel);

@@ -427,19 +427,16 @@
 }
 
 .carousel-tile {
-  width: 300px;
+  width: 304px; /* PREVIOUS WAS 300 */
   height: 200px;
-  flex-shrink: 0;
   display: flex;
-  justify-content: center;
   align-items: center;
-  background: #DF81A2;
-  color: #000000;
-  font-size: 2rem;
-  font-weight: bold;
-  border: 3px solid #E4F0C9;
-  box-sizing: border-box;
-  margin: 2px;
+  justify-content: center;
+  background-color: #eee;
+  margin: 0 10px;
+  font-size: 1.2rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
 }
 
 .carousel-button {
