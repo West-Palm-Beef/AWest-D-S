@@ -22,6 +22,14 @@
   border: 0;
 }
 
+  .current-main-nav-page[aria-disabled="true"] {
+    color: #606060;
+    background: #EDC9D4;
+    pointer-events: none;
+    cursor: not-allowed;
+    text-decoration: none;
+  }
+
 /* ======================================================== */
 
   /* SKIP TO MAIN - HIDDEN */

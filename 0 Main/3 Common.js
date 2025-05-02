@@ -88,8 +88,24 @@ const tilesPerView = 2;
 const tileWidth = 304; // Must match CSS
 
 function updateCarousel() {
+  // Move the track to show the correct set of tiles
   track.style.transform = `translateX(-${currentIndex * tileWidth}px)`;
+
+  // Update aria-hidden attributes for each tile
+  tiles.forEach((tile, index) => {
+    // Hide tiles that are not in the visible range
+    if (index < currentIndex || index >= currentIndex + tilesPerView) {
+      tile.setAttribute('aria-hidden', 'true');
+      tile.setAttribute('tabindex', '-1'); // Make sure these are skipped by keyboard navigation
+    } else {
+      tile.setAttribute('aria-hidden', 'false');
+      tile.setAttribute('tabindex', '0'); // Make these focusable again
+    }
+  });
 }
+
+// Update on initial load to set aria-hidden properly
+updateCarousel();
 
 nextButton.addEventListener('click', () => {
   if (currentIndex < tiles.length - tilesPerView) {
@@ -105,4 +121,5 @@ prevButton.addEventListener('click', () => {
   }
 });
 
+// Ensure it works on resize as well
 window.addEventListener('resize', updateCarousel);
