@@ -6,6 +6,8 @@
     0 0 0 3px #FFFFFF;
   }
 
+/* ======================================================== */
+
   /* SKIP TO MAIN - HIDDEN */
   .Homepage-skip-to-main-link {
     position: absolute;
@@ -17,23 +19,23 @@
     clip: rect(1px, 1px, 1px, 1px);
   }
   
-  /* SKIP TO MAIN - FOCUSED */
-  .Homepage-skip-to-main-link:focus {
-    display: inline-block;
-    margin: 5px;
-    color: #C7E0FF;
-    background: #000000;
-    border: 2px solid #FFFFFF;
-    text-decoration: none;
-    position: static;
-    width: auto;
-    height: auto;
-    overflow: visible;
-    clip: auto;
-    left: auto;
-    top: auto;
-    padding: 5px;
-  }
+    /* SKIP TO MAIN - FOCUSED */
+    .Homepage-skip-to-main-link:focus {
+      display: inline-block;
+      margin: 5px;  
+      color: #C7E0FF;
+      background: #000000;
+      border: 2px solid #FFFFFF;
+     text-decoration: none;
+     position: static;
+     width: auto;
+      height: auto;
+     overflow: visible;
+      clip: auto;
+     left: auto;
+     top: auto;
+      padding: 5px;
+    }
 
   /* SKIP TO FOOTER - HIDDEN */
   .Homepage-skip-to-footer-link {
@@ -46,24 +48,24 @@
     clip: rect(1px, 1px, 1px, 1px);
   }
 
-  /* SKIP TO FOOTER - FOCUSED */
-  .Homepage-skip-to-footer-link:focus {
-    display: inline-block;
-    margin: 5px;
-    color: #C7E0FF;
-    background: #000000;
-    border: 2px dashed #FFFFFF;
-    text-decoration: none;
-    position: static;
-    width: auto;
-    height: auto;
-    overflow: visible;
-    clip: auto;
-    left: auto;
-    top: auto;
-    padding: 5px;
-    margin: 5px;
-  }
+    /* SKIP TO FOOTER - FOCUSED */
+   .Homepage-skip-to-footer-link:focus {
+      display: inline-block;
+      margin: 5px;
+      color: #C7E0FF;
+      background: #000000;
+      border: 2px dashed #FFFFFF;
+      text-decoration: none;
+      position: static;
+      width: auto;
+      height: auto;
+      overflow: visible;
+      clip: auto;
+      left: auto;
+      top: auto;
+      padding: 5px;
+      margin: 5px;
+   }
   
   /* BACK TO TOP - HIDDEN */
   .Homepage-back-to-top {
@@ -77,22 +79,22 @@
   }
   
   /* BACK TO TOP - FOCUSED */
-  .Homepage-back-to-top:focus {
-    display: inline-block;
-    color: #C7E0FF;
-    background: #000000;
-    border: 2px dashed #FFFFFF;
-    text-decoration: none;
-    position: static;
-    width: auto;
-    height: auto;
-    overflow: visible;
-    clip: auto;
-    left: auto;
-    top: auto;
-    padding: 5px;
-    margin: 5px;
-  }
+    .Homepage-back-to-top:focus {
+      display: inline-block;
+      color: #C7E0FF;
+      background: #000000;
+      border: 2px dashed #FFFFFF;
+      text-decoration: none;
+      position: static;
+      width: auto;
+      height: auto;
+      overflow: visible;
+      clip: auto;
+      left: auto;
+      top: auto;
+      padding: 5px;
+      margin: 5px;
+    }
 
    /* SKIP TO MAIN - HIDDEN */
   .Homepage-skip-to-main-link {
@@ -123,16 +125,16 @@
       padding: 5px;
     }
   
-    /* SKIP TO FOOTER - HIDDEN */
-    .Homepage-skip-to-footer-link {
-      position: absolute;
-      left: -10000px;
-      top: auto;
-      width: 1px;
-      height: 1px;
-      overflow: hidden;
-      clip: rect(1px, 1px, 1px, 1px);
-    }
+  /* SKIP TO FOOTER - HIDDEN */
+  .Homepage-skip-to-footer-link {
+    position: absolute;
+    left: -10000px;
+    top: auto;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    clip: rect(1px, 1px, 1px, 1px);
+  }
   
     /* SKIP TO FOOTER - FOCUSED */
     .Homepage-skip-to-footer-link:focus {
@@ -153,16 +155,16 @@
       margin: 5px;
     }
     
-    /* BACK TO TOP - HIDDEN */
-    .Homepage-back-to-top {
-      position: absolute;
-      left: -10000px;
-      top: auto;
-      width: 1px;
-      height: 1px;
-      overflow: hidden;
-      clip: rect(1px, 1px, 1px, 1px);
-    }
+  /* BACK TO TOP - HIDDEN */
+  .Homepage-back-to-top {
+    position: absolute;
+    left: -10000px;
+    top: auto;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    clip: rect(1px, 1px, 1px, 1px);
+  }
     
     /* BACK TO TOP - FOCUSED */
     .Homepage-back-to-top:focus {
@@ -234,8 +236,6 @@
     margin: 5px;
     padding: 10px;
   }
-  
-/* ======================================================== */
 
   
 /* MAIN NAV MENU STYLING ======================================================== */
