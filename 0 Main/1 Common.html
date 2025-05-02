@@ -81,9 +81,15 @@
         </li>
       </div>
 
+      <div class="sr-only">
+          <p>This carousel displays 2 slides at a time.</p>
+          <p>Please use the Previous and Next buttons to move through the slides.</p>
+        </div>
       <div class="carousel-wrapper">
-        <button class="carousel-button prev">‹</button>
-        <div class="carousel-container">
+        <button aria-label="Previous slides" class="carousel-button prev">
+          <span aria-hidden="true">‹</span>
+        </button>
+        <div role="region" aria-label="Accessible Carousel Examples" class="carousel-container">
           <div class="carousel-track">
             <div class="carousel-tile" id="tile-1">Tile 1</div>
             <div class="carousel-tile" id="tile-2">Tile 2</div>
@@ -93,7 +99,8 @@
             <div class="carousel-tile" id="tile-6">Tile 6</div>
           </div>
         </div>
-        <button class="carousel-button next">›</button>
+        <button aria-label="Next slides" class="carousel-button next">
+          <span aria-hidden="true">›</button>
       </div>
 
       <div>
