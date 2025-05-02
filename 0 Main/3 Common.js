@@ -85,7 +85,7 @@ const nextButton = document.querySelector('.carousel-button.next');
 
 let currentIndex = 0;
 const tilesPerView = 2;
-const tileWidth = 300; // Must match CSS
+const tileWidth = 304; // Must match CSS
 
 function updateCarousel() {
   track.style.transform = `translateX(-${currentIndex * tileWidth}px)`;

@@ -364,7 +364,6 @@
 
 
 /* COMPONENTS ======================================================== */
-
 .carousel-wrapper {
   display: flex;
   align-items: center;
@@ -375,15 +374,15 @@
 }
 
 .carousel-container {
-  width: 600px; /* 2 tiles * 300px */
-  height: 200px;
+  width: 608px;
+  height: 208px;
   overflow: hidden;
   position: relative;
 }
 
 .carousel-track {
   display: flex;
-  transition: transform 0.5s ease-in-out;
+  transition: transform 1.5s ease-in-out;
 }
 
 .carousel-tile {
@@ -399,6 +398,7 @@
   font-weight: bold;
   border: 2px solid black;
   box-sizing: border-box;
+  margin: 2px;
 }
 
 .carousel-button {
