@@ -410,21 +410,21 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  max-width: 700px;
+  max-width: 704px;
   margin: 20px auto;
   position: relative;
 }
 
 .carousel-container {
   width: 608px;
-  height: 208px;
+  height: 210px;
   overflow: hidden;
   position: relative;
 }
 
 .carousel-track {
   display: flex;
-  transition: transform 1.5s ease-in-out;
+  transition: transform 1s ease-in-out;
 }
 
 
@@ -436,7 +436,7 @@
   flex-shrink: 0;
   box-sizing: border-box;
   margin: 2px;
-  box-shadow: 3px 3px 2px black;
+  box-shadow: 0px 5px 2px black;
   border: 1px solid #000000;
 }
 
@@ -508,7 +508,18 @@
 
 /* CAROUSEL BUTTONS*/
 
-.carousel-button {
+.carousel-button-next {
+  background: #7ed6ca;
+  color: black;
+  border: 2px solid #000;
+  font-size: 2rem;
+  padding: 0.5rem 1rem;
+  margin-left: 0.2rem;
+  cursor: pointer;
+  user-select: none;
+}
+
+.carousel-button-prev {
   background: #7ed6ca;
   color: black;
   border: 2px solid #000;
@@ -518,7 +529,7 @@
   user-select: none;
 }
 
-.carousel-button:focus {
+.carousel-button-prev:focus {
   background: #7D68DA;
   color: #7ed6ca;
   border: 2px solid #000000;
@@ -528,7 +539,27 @@
   user-select: none;
 }
 
-.carousel-button:hover {
+.carousel-button-next:focus {
+  background: #7D68DA;
+  color: #7ed6ca;
+  border: 2px solid #000000;
+  font-size: 2rem;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  user-select: none;
+}
+
+.carousel-button-prev:hover {
+  background: #7D68DA;
+  color: #7ed6ca;
+  border: 2px solid #000000;
+  font-size: 2rem;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  user-select: none;
+}
+
+.carousel-button-next:hover {
   background: #7D68DA;
   color: #7ed6ca;
   border: 2px solid #000000;

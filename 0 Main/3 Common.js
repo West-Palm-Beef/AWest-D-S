@@ -81,12 +81,12 @@ document.addEventListener('DOMContentLoaded', function() {
 
 const track = document.querySelector('.carousel-track');
 const tiles = document.querySelectorAll('.carousel-tile');
-const prevButton = document.querySelector('.carousel-button.prev');
-const nextButton = document.querySelector('.carousel-button.next');
+const prevButton = document.querySelector('.carousel-button-prev');
+const nextButton = document.querySelector('.carousel-button-next');
 
 let currentIndex = 0;
 const tilesPerView = 2;
-const tileWidth = 304; // Must match CSS
+const tileWidth = 304 ; // Must match CSS
 
 function updateCarousel() {
   // Move the track to show the correct set of tiles
