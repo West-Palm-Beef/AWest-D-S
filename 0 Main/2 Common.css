@@ -1,4 +1,4 @@
-/* main section /*======= =======*/
+/* Main section /*======= =======*/
 /* Sub-Section /*-------  -------*/
 
 
@@ -51,7 +51,7 @@
   }
   
 
-/*------- SKIP TO MAIN-FOCUSED -------*/
+/*------- SKIP TO MAIN (FOCUSED) -------*/
   .Homepage-skip-to-main-link:focus {
     display: inline-block;
     margin: 5px;  
@@ -70,7 +70,7 @@
   }
 
 
-/*------- SKIP TO FOOTER-HIDDEN -------*/
+/*------- SKIP TO FOOTER (HIDDEN) -------*/
   .Homepage-skip-to-footer-link {
     position: absolute;
     left: -10000px;
@@ -82,7 +82,7 @@
   }
 
 
-/*------- SKIP TO FOOTER-FOCUSED -------*/
+/*------- SKIP TO FOOTER (FOCUSED) -------*/
   .Homepage-skip-to-footer-link:focus {
     display: inline-block;
     margin: 5px;
@@ -102,7 +102,7 @@
    }
 
 
-/*------- BACK TO TOP-HIDDEN -------*/
+/*------- BACK TO TOP (HIDDEN) -------*/
   .Homepage-back-to-top {
     position: absolute;
     left: -10000px;
@@ -114,7 +114,7 @@
   }
   
   
-/*------- BACK TO TOP-FOCUSED -------*/
+/*------- BACK TO TOP (FOCUSED) -------*/
   .Homepage-back-to-top:focus {
     display: inline-block;
     color: #C7E0FF;
@@ -244,7 +244,7 @@
   }
 
 
-/*-------TOP-LEVEL NAV LINKS ONLY-FOCUSED-------*/
+/*-------TOP-LEVEL NAV LINKS ONLY (FOCUSED)-------*/
   .Homepage-main-nav-item > a:focus {
     color: #000000;
     background: #7ED6CA;
@@ -255,7 +255,7 @@
   }
 
 
-/*-------TOP-LEVEL NAV LINKS ONLY-HOVER-------*/
+/*-------TOP-LEVEL NAV LINKS ONLY (HOVER)-------*/
   .Homepage-main-nav-item > a:hover {
     color: #000000;
     background: #7ED6CA;
@@ -447,7 +447,7 @@
   }
 
 
-/*-------CAROUSEL TILE -------*/
+/*-------CAROUSEL TILE 5-------*/
   .carousel-tile-5 {
     background: #FFDAB4;
     color: #000000;
@@ -460,7 +460,7 @@
   }
 
 
-/*-------CAROUSEL TILE -------*/
+/*-------CAROUSEL TILE 6-------*/
   .carousel-tile-6 {
     background: #FFCBE1;
     color: #000000;
@@ -475,18 +475,6 @@
 
 /*=======CAROUSEL BUTTONS=======*/
 
-/*-------CAROUSEL NEXT BUTTON-------*/
-  .carousel-button-next {
-    background: #7ed6ca;
-    color: black;
-    border: 2px solid #000;
-    font-size: 2rem;
-    padding: 0.5rem 1rem;
-    margin-left: 0.2rem;
-    cursor: pointer;
-    user-select: none;
-  }
-
 
 /*-------CAROUSEL PREV BUTTON-------*/
   .carousel-button-prev {
@@ -495,6 +483,18 @@
     border: 2px solid #000;
     font-size: 2rem;
     padding: 0.5rem 1rem;
+    cursor: pointer;
+    user-select: none;
+  }
+
+/*-------CAROUSEL NEXT BUTTON-------*/
+  .carousel-button-next {
+    background: #7ed6ca;
+    color: black;
+    border: 2px solid #000;
+    font-size: 2rem;
+    padding: 0.5rem 1rem;
+    margin-left: 0.2rem;
     cursor: pointer;
     user-select: none;
   }
@@ -512,7 +512,7 @@
   }
 
 
-/*-------CAROUSEL PREV BUTTON (FOCUSED)-------*/
+/*-------CAROUSEL NEXT BUTTON (FOCUSED)-------*/
   .carousel-button-next:focus {
     background: #7D68DA;
     color: #7ed6ca;
