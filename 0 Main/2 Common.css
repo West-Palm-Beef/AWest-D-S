@@ -1,26 +1,31 @@
-/* MAIN ACCESSIBILITY COMPONENETS */
+/* main section /*======= =======*/
+/* Sub-Section /*-------  -------*/
 
-/* FOCUS INDICATOR */
-:focus {
+
+/*=======MAIN ACCESSIBILITY COMPONENETS=======*/
+
+/*-------FOCUS INDICATOR-------*/
+  :focus {
     outline: none;
     box-shadow:
     0px 0px 0px 1px #000000,
     0px 0px 0px 3px #FFFFFF;
   }
 
-/* ======================================================== */
+/*-------SR-ONLY TEXT-------*/
+  .sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin-left: 350px;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+    white-space: nowrap;
+    border: 0;
+  }
 
-.sr-only {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  padding: 0;
-  margin-left: 350px;
-  overflow: hidden;
-  clip: rect(0 0 0 0);
-  white-space: nowrap;
-  border: 0;
-}
+/*-------DISABLED LINKS/BUTTONS-------*/
 
   .current-main-nav-page[aria-disabled="true"] {
     color: #606060;
@@ -30,9 +35,9 @@
     text-decoration: none;
   }
 
-/* ======================================================== */
+/* SKIP TO-LINKS */
 
-  /* SKIP TO MAIN - HIDDEN */
+  /*-------SKIP TO MAIN-HIDDEN-------*/
   .Homepage-skip-to-main-link {
     position: absolute;
     left: -10000px;
@@ -43,25 +48,27 @@
     clip: rect(1px, 1px, 1px, 1px);
   }
   
-    /* SKIP TO MAIN - FOCUSED */
-    .Homepage-skip-to-main-link:focus {
-      display: inline-block;
-      margin: 5px;  
-      color: #C7E0FF;
-      background: #000000;
-      border: 2px solid #FFFFFF;
-      text-decoration: none;
-      position: static;
-      width: auto;
-      height: auto;
-      overflow: visible;
-      clip: auto;
-      left: auto;
-      top: auto;
-      padding: 5px;
-    }
 
-  /* SKIP TO FOOTER - HIDDEN */
+  /*------- SKIP TO MAIN-FOCUSED -------*/
+  .Homepage-skip-to-main-link:focus {
+    display: inline-block;
+    margin: 5px;  
+    color: #C7E0FF;
+    background: #000000;
+    border: 2px solid #FFFFFF;
+    text-decoration: none;
+    position: static;
+    width: auto;
+    height: auto;
+    overflow: visible;
+    clip: auto;
+    left: auto;
+    top: auto;
+    padding: 5px;
+  }
+
+
+  /*------- SKIP TO FOOTER-HIDDEN -------*/
   .Homepage-skip-to-footer-link {
     position: absolute;
     left: -10000px;
@@ -72,26 +79,28 @@
     clip: rect(1px, 1px, 1px, 1px);
   }
 
-    /* SKIP TO FOOTER - FOCUSED */
-   .Homepage-skip-to-footer-link:focus {
-      display: inline-block;
-      margin: 5px;
-      color: #C7E0FF;
-      background: #000000;
-      border: 2px dashed #FFFFFF;
-      text-decoration: none;
-      position: static;
-      width: auto;
-      height: auto;
-      overflow: visible;
-      clip: auto;
-      left: auto;
-      top: auto;
-      padding: 5px;
-      margin: 5px;
+
+  /*------- SKIP TO FOOTER-FOCUSED -------*/
+  .Homepage-skip-to-footer-link:focus {
+    display: inline-block;
+    margin: 5px;
+    color: #C7E0FF;
+    background: #000000;
+    border: 2px dashed #FFFFFF;
+    text-decoration: none;
+    position: static;
+    width: auto;
+    height: auto;
+    overflow: visible;
+    clip: auto;
+    left: auto;
+    top: auto;
+    padding: 5px;
+    margin: 5px;
    }
-  
-  /* BACK TO TOP - HIDDEN */
+
+
+   /*------- BACK TO TOP-HIDDEN -------*/
   .Homepage-back-to-top {
     position: absolute;
     left: -10000px;
@@ -102,115 +111,30 @@
     clip: rect(1px, 1px, 1px, 1px);
   }
   
-  /* BACK TO TOP - FOCUSED */
-    .Homepage-back-to-top:focus {
-      display: inline-block;
-      color: #C7E0FF;
-      background: #000000;
-      border: 2px dashed #FFFFFF;
-      text-decoration: none;
-      position: static;
-      width: auto;
-      height: auto;
-      overflow: visible;
-      clip: auto;
-      left: auto;
-      top: auto;
-      padding: 5px;
-      margin: 5px;
-    }
-
-   /* SKIP TO MAIN - HIDDEN */
-  .Homepage-skip-to-main-link {
-    position: absolute;
-    left: -10000px;
-    top: auto;
-    width: 1px;
-    height: 1px;
-    overflow: hidden;
-    clip: rect(1px, 1px, 1px, 1px);
-  }
-    
-    /* SKIP TO MAIN - FOCUSED */
-    .Homepage-skip-to-main-link:focus {
-      display: inline-block;
-      margin: 5px;
-      color: #C7E0FF;
-      background: #000000;
-      border: 2px solid #FFFFFF;
-      text-decoration: none;
-      position: static;
-      width: auto;
-      height: auto;
-      overflow: visible;
-      clip: auto;
-      left: auto;
-      top: auto;
-      padding: 5px;
-    }
   
-  /* SKIP TO FOOTER - HIDDEN */
-  .Homepage-skip-to-footer-link {
-    position: absolute;
-    left: -10000px;
+  /*------- BACK TO TOP-FOCUSED -------*/
+  .Homepage-back-to-top:focus {
+    display: inline-block;
+    color: #C7E0FF;
+    background: #000000;
+    border: 2px dashed #FFFFFF;
+    text-decoration: none;
+    position: static;
+    width: auto;
+    height: auto;
+    overflow: visible;
+    clip: auto;
+    left: auto;
     top: auto;
-    width: 1px;
-    height: 1px;
-    overflow: hidden;
-    clip: rect(1px, 1px, 1px, 1px);
-  }
-  
-    /* SKIP TO FOOTER - FOCUSED */
-    .Homepage-skip-to-footer-link:focus {
-      display: inline-block;
-      margin: 5px;
-      color: #C7E0FF;
-      background: #000000;
-      border: 2px dashed #FFFFFF;
-      text-decoration: none;
-      position: static;
-      width: auto;
-      height: auto;
-      overflow: visible;
-      clip: auto;
-      left: auto;
-      top: auto;
-      padding: 5px;
-      margin: 5px;
-    }
-    
-  /* BACK TO TOP - HIDDEN */
-  .Homepage-back-to-top {
-    position: absolute;
-    left: -10000px;
-    top: auto;
-    width: 1px;
-    height: 1px;
-    overflow: hidden;
-    clip: rect(1px, 1px, 1px, 1px);
-  }
-    
-    /* BACK TO TOP - FOCUSED */
-    .Homepage-back-to-top:focus {
-      display: inline-block;
-      color: #C7E0FF;
-      background: #000000;
-      border: 2px dashed #FFFFFF;
-      text-decoration: none;
-      position: static;
-      width: auto;
-      height: auto;
-      overflow: visible;
-      clip: auto;
-      left: auto;
-      top: auto;
-      padding: 5px;
-      margin: 5px;
+    padding: 5px;
+    margin: 5px;
     }
 
-/* HOMEPAGE WIDE STYLING ======================================================== */
 
-  /* SITE BACKGROUND */
+
+/*=======HOMEPAGE WIDE STYLING=======*/
+
+  /*-------SITE BACKGROUND-------*/
   .Homepage-main-body {
     display: block;
     background: #7D68AD;
@@ -219,12 +143,15 @@
     padding: 10px;
   }
 
+
+  /*-------HOMEPAGE MAIN LOGO-------*/
   .Homepage-main-logo {
     margin: 10px;
     padding: 10px;
   }
   
-  /* HEADER STYLING */
+
+  /*-------HEADER STYLING-------*/
   .Homepage-main-header {
     background: #8797D4;
     border: 5px solid #7ED6CA;
@@ -233,7 +160,8 @@
     padding: 0px;
   }
   
-  /* MAIN CONTENT STYLING */
+
+  /*-------MAIN CONTENT STYLING-------*/
   .Homepage-main-main-content {
     background: #8797D4;
     border: 5px solid #7ED6CA;
@@ -245,14 +173,17 @@
     padding: 10px;
   }
 
+
+  /*-------HOMEPAGE MAIN H1-------*/
   .Homepage-main-h1 {
     color: #FFFFFF;
     font-weight: 900;
     font-family: 'Times New Roman', Times, serif;
     text-shadow: -1px 1px 0.5px #000000
   }
+
   
-  /* FOOTER STYLING */
+/*-------FOOTER STYLING-------*/
   .Homepage-main-footer {
     background: #8797D4;
     border: 5px solid #7ED6CA;
@@ -261,9 +192,9 @@
     padding: 10px;
   }
 
-/* MAIN NAV MENU STYLING ======================================================== */
+/*=======MAIN NAV MENU STYLING=======*/
 
-/* MAIN NAV MENU STYLING */
+/*-------MAIN NAV MENU STYLING-------*/
 .Homepage-main-nav-menu {
   background: #DF81A2;
   border: 2px solid #7ED6CA;
@@ -278,7 +209,8 @@
   padding-bottom: 10px;
 }
 
-/* NAV LIST CONTAINER */
+
+/*-------NAV LIST CONTAINER-------*/
 .Homepage-main-nav-list {
   display: flex;
   justify-content: center;
@@ -289,14 +221,16 @@
   margin: 0px;
 }
 
-/* TOP-LEVEL MENU ITEMS */
+
+/*-------TOP-LEVEL MENU ITEMS-------*/
 .Homepage-main-nav-item {
   position: relative;
   display: inline-block;
   margin-right: 0px;
 }
 
-/* TOP-LEVEL NAV LINKS ONLY*/
+
+/*-------TOP-LEVEL NAV LINKS ONLY-------*/
 .Homepage-main-nav-item > a {
   display: inline-block;
   font-size: 23pt;
@@ -306,6 +240,8 @@
   padding: 2px 4px;
   border-radius: 4px;
 }
+
+
 
 .Homepage-main-nav-item > a:focus {
   color: #000000;
@@ -428,7 +364,7 @@
 }
 
 
-/* CAROUSEL TILES*/
+/* CAROUSEL TILES */
 
 .carousel-tile {
   width: 300px;
