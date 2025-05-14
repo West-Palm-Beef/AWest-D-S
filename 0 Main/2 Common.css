@@ -669,662 +669,82 @@
 
 
   /*==============150% ZOOM-IN==============*/
+/* Responsive fix for iPhone SE (viewport width ~320px) */
 @media (max-width: 500px) {
-/* Main section /*======= =======*/
-/* Sub-Section /*-------  -------*/
-
-
-/*=======MAIN ACCESSIBILITY COMPONENETS=======*/
-
-/*-------FOCUS INDICATOR-------*/
-  :focus {
-    outline: none;
-    box-shadow:
-    0px 0px 0px 1px #000000,
-    0px 0px 0px 3px #FFFFFF;
-  }
-
-
-/*-------SR-ONLY TEXT-------*/
-  .sr-only {
-    position: absolute;
-    width: 1px;
-    height: 1px;
-    padding: 0;
-    margin-left: 350px;
-    overflow: hidden;
-    clip: rect(0 0 0 0);
-    white-space: nowrap;
-    border: 0;
-  }
-
-
-/*-------DISABLED LINKS/BUTTONS-------*/
-  .current-main-nav-page[aria-disabled="true"] {
-    color: #454545;
-    background: #EDC9D4;
-    pointer-events: none;
-    cursor: not-allowed;
-    text-decoration: none;
-  }
-
-
-/* SKIP TO-LINKS */
-
-/*-------SKIP TO MAIN-HIDDEN-------*/
-  .Homepage-skip-to-main-link {
-    position: absolute;
-    left: -10000px;
-    top: auto;
-    width: 1px;
-    height: 1px;
-    overflow: hidden;
-    clip: rect(1px, 1px, 1px, 1px);
-  }
-  
-
-/*------- SKIP TO MAIN (FOCUSED) -------*/
-  .Homepage-skip-to-main-link:focus {
-    display: block;
-    margin: 5px;  
-    color: #C7E0FF;
-    background: #000000;
-    border: 2px solid #FFFFFF;
-    text-decoration: none;
-    position: static;
-    width: auto;
-    height: auto;
-    overflow: visible;
-    clip: auto;
-    left: auto;
-    top: auto;
-    padding: 5px;
-  }
-
-
-/*------- SKIP TO FOOTER (HIDDEN) -------*/
-  .Homepage-skip-to-footer-link {
-    position: absolute;
-    left: -10000px;
-    top: auto;
-    width: 1px;
-    height: 1px;
-    overflow: hidden;
-    clip: rect(1px, 1px, 1px, 1px);
-  }
-
-
-/*------- SKIP TO FOOTER (FOCUSED) -------*/
-  .Homepage-skip-to-footer-link:focus {
-    display: block;
-    margin: 5px;
-    color: #C7E0FF;
-    background: #000000;
-    border: 2px dashed #FFFFFF;
-    text-decoration: none;
-    position: static;
-    width: auto;
-    height: auto;
-    overflow: visible;
-    clip: auto;
-    left: auto;
-    top: auto;
-    padding: 5px;
-    margin: 5px;
-   }
-
-
-/*------- BACK TO TOP (HIDDEN) -------*/
-  .Homepage-back-to-top {
-    position: absolute;
-    left: -10000px;
-    top: auto;
-    width: 1px;
-    height: 1px;
-    overflow: hidden;
-    clip: rect(1px, 1px, 1px, 1px);
-  }
-  
-  
-/*------- BACK TO TOP (FOCUSED) -------*/
-  .Homepage-back-to-top:focus {
-    display: inline-block;
-    color: #C7E0FF;
-    background: #000000;
-    border: 2px dashed #FFFFFF;
-    text-decoration: none;
-    position: static;
-    width: auto;
-    height: auto;
-    overflow: visible;
-    clip: auto;
-    left: auto;
-    top: auto;
-    padding: 5px;
-    margin: 5px;
-    }
-
-
-/*=======HOMEPAGE WIDE STYLING=======*/
-
-/*-------SITE BACKGROUND-------*/
-  .Homepage-main-body {
-    display: block;
-    background: #000000;
-    box-shadow: 3px 3px 10px #CFCFFF;
-    margin: 10px;
-    padding: 10px;
-  }
-
-
-/*-------HOMEPAGE MAIN LOGO-------*/
-  .Homepage-main-logo {
-    margin: 10px;
-    padding: 10px;
-  }
-
-
-/*-------HEADER STYLING-------*/
-  .Homepage-main-header {
-    background: #8797D4;
-    border: 5px solid #7ED6CA;
-    box-shadow: 3px 3px 10px #D6E5DB;
-    margin: 0px;
-    padding: 0px;
-  }
-  
-
-/*-------FOOTER STYLING-------*/
-  .Homepage-main-footer {
-    background: #8797D4;
-    border: 5px solid #7ED6CA;
-    box-shadow: 3px 3px 10px #D6E5DB;
-    margin: 5px;
-    padding: 10px;
-  }
-
-
-/*=======MAIN NAV MENU STYLING=======*/
-
-/*-------MAIN NAV MENU STYLING-------*/
-  .Homepage-main-nav-menu {
-    background: #DF81A2;
-    border: 2px solid #7ED6CA;
-    box-shadow: 3px 3px 10px black;
-    margin-left: 200px;
-    margin-right: 200px;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    padding-left: 0px;
-    padding-right: 0px;
-    padding-top: 10px;
-    padding-bottom: 10px;
-  }
-
-
-/*-------NAV LIST CONTAINER-------*/
-  .Homepage-main-nav-list {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    list-style: none;
-    padding: 0px;
-    margin: 0px;
-  }
-
-
-/*-------TOP-LEVEL MENU ITEMS-------*/
-  .Homepage-main-nav-item {
-    position: relative;
-    display: inline-block;
-    margin-right: 0px;
-  }
-
-
-/*-------TOP-LEVEL NAV LINKS ONLY-------*/
-  .Homepage-main-nav-item > a {
-    display: inline-block;
-    font-size: 21pt;
-    margin-left: 40px;
-    text-decoration: underline;
-    color: #000000;
-    padding: 2px 4px;
-    border-radius: 3px;
-  }
-
-
-/*-------TOP-LEVEL NAV LINKS ONLY (FOCUSED)-------*/
-  .Homepage-main-nav-item > a:focus {
-    color: #000000;
-    background: #7ED6CA;
-    display: inline;
-    font-size: 21pt;
-    margin-left: 40px;
-    text-decoration: underline;
-  }
-
-
-/*-------TOP-LEVEL NAV LINKS ONLY (HOVER)-------*/
-  .Homepage-main-nav-item > a:hover {
-    color: #000000;
-    background: #7ED6CA;
-    display: inline;
-    font-size: 20pt;
-    margin-left: 40px;
-    text-decoration: underline;
-  }
-
-
-/*-------NAV-BAR-BUTTON STYLING-------*/
-  .Homepage-main-nav-item button {
-    padding: 0px;
-    border: none;
-    width: 32px;
-    height: 22px;
-    background: transparent;
-    color: #000000;
-  }
-
-
-/*-------NAV-BAR-BUTTON STYLING (FOCUSED)-------*/
-  .Homepage-main-nav-item button:focus {
-    background: #7ED6CA;
-    color: #000000;
-    padding: 0px;
-    border: none;
-    width: 32px;
-    height: 22px;
-  }
-
-
-/*-------NAV-BAR-BUTTON STYLING (HOVER)-------*/
-  .Homepage-main-nav-item button:hover {
-    background: #7ED6CA;
-    color: #000000;
-    padding: 0px;
-    border: none;
-    width: 32px;
-    height: 22px;
-    cursor: pointer;
-  }
-
-
-/*-------NAV-BAR-BUTTON STYLING (PRESSED/ACTIVE)-------*/
-  .Homepage-main-nav-item button:active {
-    background: #8797D4;
-    color: #000000;
-    padding: 0px;
-    border: none;
-    width: 32px;
-    height: 22px;
-    cursor: pointer;
-  }
-
-
-/*-------NAV-BAR-BUTTON STYLING (SVG)-------*/
-  .Homepage-main-nav-item button svg {
-    padding: 0px;
-    border: 1px solid #000000;
-    width: 30px;
-    height: 20px;
-    fill: none;
-  }
-
-
-/*=======SUB-MENU=======*/
-
-/*-------SUB-MENU WRAPPER (HIDDEN BY DEFAULT)-------*/
-  .Homepage-main-nav-sub-menu {
-    display: none;
-    position: absolute;
-    text-align: center;
-    top: 40px;
-    left: 50px;
-    background-color: #7ED6CA;
-    border-left: 4px solid #E4F0C9;
-    border-right: 4px solid #E4F0C9;
-    border-top: 4px solid #E4F0C9;
-    padding-left: 0px;
-    margin-left: 0px;
-    list-style: none;
-  }
-
-
-/*-------SUB-MENU ITEMS-------*/
-  .Homepage-main-nav-sub-menu-item {
-    display: block;
-    border-bottom: 4px dashed #D6E5BD;
-  }
-
-
-/*-------SUB-MENU LINKS-------*/
-  .Homepage-main-nav-sub-menu-item a {
-    margin-left: 0px;
-    font-size: 15px;
-    padding: 5px 10px;
-    display: block;
-    text-decoration: none;
-    color: black;
-  }
-
-/*-------SUB-MENU LINKS-------*/
-  .Homepage-main-nav-sub-menu-item a:focus {
-    margin-left: 0px;
-    font-size: 15px;
-    padding: 5px 10px;
-    display: block;
-    text-decoration: underline;
-    color: #000000;
-    background: #8797D4;
-  }
-
-
-/*-------SUB-MENU LINKS-------*/
-  .Homepage-main-nav-sub-menu-item a:hover {
-    margin-left: 0px;
-    font-size: 15px;
-    padding: 5px 10px;
-    display: block;
-    text-decoration: underline;
-    color: #000000;
-    background: #8797D4;
-  }
-
-
-/*-------WHEN MENU IS EXPANDED-------*/
-  .Homepage-main-nav-sub-menu.expanded {
-    display: block;
-  }
-
-
-
-/*=======HOMEPAGE-MAIN BODY=======*/
-
-/*-------MAIN CONTENT STYLING-------*/
-  .Homepage-main-main-content {
-    background: #000000;
-    border: 5px solid #7ED6CA;
-    box-shadow: 3px 3px 10px #D6E5DB;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    margin-left: 50px;
-    margin-right: 50px;
-    padding: 10px;
-  }
-
-
-/*-------HOMEPAGE MAIN H1-------*/
-  .Homepage-main-h1 {
-    color: #000000;
-    text-shadow: 1px 1px 0.5px #FFFFFF;
-    background: #7ED6CA;
-    border: 2px inset #000000;
-    text-align: center;
-    font-size: 50px;
-    font-weight: 900;
-    font-family: 'Times New Roman', Times, serif;
-  }
-
-
-/*-------HOMEPAGE H2-------*/
-  .Homepage-main-h2 {
-    color: #FFFFFF;
-    font-size: 30px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    font-weight: bold;
-    font-family: 'Times New Roman', Times, serif;
-    text-shadow: -1px 1px 0.5px #000000;
-    padding-left: 20px;
-  }
-
-/*-------PARAGRAPH-------*/
-  .Homepage-paragraph-styling {
-    border: 4px ridge #000000;
-    width: 63rem;
-  }
-
-
-/*-------PARAGRAPH-------*/
-  .Homepage-paragraph-1 {
-    color: #000000;
-    font-size: 20pt;
-    font-weight: bold;
-    display: block;
-    justify-content: left;
-    align-items: left;
-    text-align: left;
-    padding-left: 50px;
-  }
-
-  .Homepage-paragraph-1-1 {
-    color: #000000;
-    font-size: 16pt;
-    font-weight: bold;
-    display: flex;
-    justify-content: left;
-    align-items: left;
-    text-align: left;
-    padding-left: 20px;
-    margin-top: -20px;
-  }
-
-/*=======COMPONENTS=======*/
-
-/*-------CAROUSEL WRAPPER-------*/
-  .carousel-wrapper {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    max-width: 704px;
-    margin: 20px auto;
-    position: relative;
-  }
-
-
-/*-------CAROUSEL WRAPPER-------*/
-  .carousel-container {
-    width: 608px;
-    height: 210px;
-    overflow: hidden;
-    position: relative;
-  }
-
-
-/*-------CAROUSEL WRAPPER-------*/
-  .carousel-track {
-    display: flex;
-    transition: transform 1s ease-in-out;
-  }
-
-
-/*-------CAROUSEL TILES-------*/
-  .carousel-tile {
-    width: 300px;
-    height: 200px;
-    flex-shrink: 0;
-    box-sizing: border-box;
-    margin: 2px;
-    box-shadow: 0px 5px 2px black;
-    border: 1px solid #000000;
-  }
-
-
-/*-------CAROUSEL TILE 1-------*/
-  .carousel-tile-1 {
-    background: #DCCCEC;
-    color: #000000;
-    font-size: 14pt;
-    font-weight: bold;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-  }
-
-
-/*-------CAROUSEL TILE 2-------*/
-  .carousel-tile-2 {
-    background: #BCD8EC;
-    color: #000000;
-    font-size: 14pt;
-    font-weight: bold;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-  }
-
-
-/*-------CAROUSEL TILE 3-------*/
+  .Homepage-main-body,
+  .Homepage-main-header,
+  .Homepage-main-footer,
+  .Homepage-main-main-content,
+  .Homepage-main-nav-menu,
+  .Homepage-main-nav-list,
+  .Homepage-main-nav-item,
+  .Homepage-main-nav-item > a,
+  .Homepage-main-nav-sub-menu,
+  .Homepage-main-nav-sub-menu-item a,
+  .Homepage-main-h1,
+  .Homepage-main-h2,
+  .Homepage-paragraph-styling,
+  .Homepage-paragraph-1,
+  .Homepage-paragraph-1-1,
+  .carousel-wrapper,
+  .carousel-container,
+  .carousel-track,
+  .carousel-tile,
+  .carousel-tile-1,
+  .carousel-tile-2,
   .carousel-tile-3 {
-    background: #D6E5BD;
-    color: #000000;
-    font-size: 14pt;
-    font-weight: bold;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
+    margin: 0 !important;
+    padding: 0.5rem !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    box-sizing: border-box;
   }
 
-
-/*-------CAROUSEL TILE 4-------*/
-  .carousel-tile-4 {
-    background: #F9E1A8;
-    color: #000000;
-    font-size: 12pt;
-    font-weight: bold;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
+  .Homepage-main-header,
+  .Homepage-main-footer {
+    flex-direction: column;
   }
 
-
-/*-------CAROUSEL TILE 5-------*/
-  .carousel-tile-5 {
-    background: #FFDAB4;
-    color: #000000;
-    font-size: 14pt;
-    font-weight: bold;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
+  .Homepage-main-h1,
+  .Homepage-main-h2 {
+    font-size: 1.2rem !important;
+    margin: 0.5rem 0 !important;
+    padding: 0.5rem !important;
   }
 
-
-/*-------CAROUSEL TILE 6-------*/
-  .carousel-tile-6 {
-    background: #FFCBE1;
-    color: #000000;
-    font-size: 12pt;
-    font-weight: bold;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
+  .Homepage-main-main-content {
+    margin: 1rem 0 !important;
   }
 
-
-/*=======CAROUSEL BUTTONS=======*/
-
-
-/*-------CAROUSEL PREV BUTTON-------*/
-  .carousel-button-prev {
-    background: #7ed6ca;
-    color: black;
-    border: 2px solid #000;
-    font-size: 2rem;
-    padding: 0.5rem 1rem;
-    cursor: pointer;
-    user-select: none;
+  .Homepage-paragraph-styling {
+    width: 100% !important;
   }
 
-/*-------CAROUSEL NEXT BUTTON-------*/
-  .carousel-button-next {
-    background: #7ed6ca;
-    color: black;
-    border: 2px solid #000;
-    font-size: 2rem;
-    padding: 0.5rem 1rem;
-    margin-left: 0.2rem;
-    cursor: pointer;
-    user-select: none;
+  .carousel-container {
+    width: 100% !important;
+    height: auto;
   }
 
-
-/*-------CAROUSEL PREV BUTTON (FOCUSED)-------*/
-  .carousel-button-prev:focus {
-    background: #7D68DA;
-    color: #7ed6ca;
-    border: 2px solid #000000;
-    font-size: 2rem;
-    padding: 0.5rem 1rem;
-    cursor: pointer;
-    user-select: none;
+  .carousel-tile {
+    width: 90% !important;
+    height: auto;
+    margin: 0.5rem auto;
   }
 
-
-/*-------CAROUSEL NEXT BUTTON (FOCUSED)-------*/
-  .carousel-button-next:focus {
-    background: #7D68DA;
-    color: #7ed6ca;
-    border: 2px solid #000000;
-    font-size: 2rem;
-    padding: 0.5rem 1rem;
-    cursor: pointer;
-    user-select: none;
+  .Homepage-main-nav-item > a,
+  .Homepage-main-nav-sub-menu-item a {
+    font-size: 0.9rem !important;
+    padding: 0.5rem !important;
   }
 
-
-/*-------CAROUSEL PREV BUTTON (HOVER)-------*/
-  .carousel-button-prev:hover {
-    background: #7D68DA;
-    color: #7ed6ca;
-    border: 2px solid #D6E5BD;
-    font-size: 2rem;
-    padding: 0.5rem 1rem;
-    cursor: pointer;
-    user-select: none;
+  .Homepage-paragraph-1,
+  .Homepage-paragraph-1-1 {
+    font-size: 1rem !important;
+    padding: 0.5rem !important;
+    margin: 0 !important;
   }
 
-
-/*-------CAROUSEL NEXT BUTTON (HOVER)-------*/
-  .carousel-button-next:hover {
-    background: #7D68DA;
-    color: #7ed6ca;
-    border: 2px solid #D6E5BD;
-    font-size: 2rem;
-    padding: 0.5rem 1rem;
-    cursor: pointer;
-    user-select: none;
-  }
-
-  /*-------CAROUSEL PREV BUTTON (PRESSED/ACTIVE)-------*/
-  .carousel-button-prev:active {
-    background: #8797D4;
-    color: #000000;
-    border: 2px solid #000000;
-    font-size: 2rem;
-    padding: 0.5rem 1rem;
-    cursor: pointer;
-    user-select: none;
-  }
-
-
-/*-------CAROUSEL NEXT BUTTON (PRESSED/ACTIVE)-------*/
-  .carousel-button-next:active {
-    background: #8797D4;
-    color: #000000;
-    border: 2px solid #000000;
-    font-size: 2rem;
-    padding: 0.5rem 1rem;
-    cursor: pointer;
-    user-select: none;
+  .Homepage-main-logo {
+    margin: 0.5rem !important;
   }
 }
