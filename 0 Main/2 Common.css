@@ -670,7 +670,7 @@
 
   /*==============150% ZOOM-IN==============*/
 /* Responsive fix for iPhone SE (viewport width ~320px) */
-@media (max-width: 500px) {
+@media (max-width: 600px) {
   .Homepage-main-body,
   .Homepage-main-header,
   .Homepage-main-footer,
