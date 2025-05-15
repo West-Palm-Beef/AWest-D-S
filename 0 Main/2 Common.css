@@ -697,6 +697,7 @@
     width: 100% !important;
     max-width: 100% !important;
     box-sizing: border-box;
+        text-align: center;
   }
 
   .Homepage-main-header,
@@ -736,7 +737,11 @@
     padding: 0.5rem !important;
   }
 
-  .Homepage-paragraph-1,
+  .Homepage-paragraph-1 {
+    font-size: 1.3rem !important;
+    padding: 0.5rem !important;
+    margin: 0 !important;
+  }
   .Homepage-paragraph-1-1 {
     font-size: 1rem !important;
     padding: 0.5rem !important;
